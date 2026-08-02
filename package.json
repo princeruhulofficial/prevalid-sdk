@@ -1,5 +1,5 @@
 {
-  "name": "@prevalid/core",
+  "name": "prevalid-sdk",
   "version": "0.1.0",
   "description": "Prevalid is the decision system for AI. Official JavaScript/TypeScript SDK.",
   "type": "module",
