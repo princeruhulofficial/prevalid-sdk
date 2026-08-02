@@ -1,14 +1,16 @@
-# @prevalid/core
+# prevalid-sdk
 
 **Prevalid is the decision system for AI.**  
 Prevalid determines what AI should do before AI acts.
 
 Official **JavaScript / TypeScript SDK** — HTTP client only. No server code.
 
+**npm:** [prevalid-sdk](https://www.npmjs.com/package/prevalid-sdk) · **v0.1.0**
+
 ```text
 Developer
     │
-npm install @prevalid/core
+npm install prevalid-sdk
     │
 Prevalid SDK
     │
@@ -23,17 +25,17 @@ HTTPS API
 ## Install
 
 ```bash
-npm install @prevalid/core
+npm install prevalid-sdk
 ```
 
 ## Configure
 
 ```ts
-import { Prevalid } from "@prevalid/core";
+import { Prevalid } from "prevalid-sdk";
 
 const prevalid = new Prevalid({
   apiKey: process.env.PREVALID_API_KEY!,
-  // baseUrl: "https://api.prevalid.ai", // default
+  // baseUrl: "https://api.prevalid.ai", // default — or your Railway URL
 });
 ```
 
@@ -112,12 +114,14 @@ npm run build
 node examples/basic.mjs
 ```
 
-## Publish
+## Publish (maintainers)
 
 ```bash
 npm run build
-npm publish --access public
+npm publish
 ```
+
+Package name on npm is **`prevalid-sdk`** (unscoped). Bump version with `npm version patch` before the next release.
 
 ## License
 
